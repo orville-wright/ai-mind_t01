@@ -20,6 +20,8 @@ pg_config = DatabaseConfig(
     tables=['house_sales']
 )
 
+# test git setup
+
 # mind = create_mind(
 #     name=minds_name,
 
