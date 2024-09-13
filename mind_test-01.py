@@ -40,13 +40,13 @@ client = OpenAI(
     base_url='https://llm.mdb.ai/'
 )
 
-question = 'which house is the most expensive'
+question = 'describe the database'
 
 # chat with the Mind you created
 completion = client.chat.completions.create(
     model=minds_name,
     messages=[
-        {'role': 'user', 'content': 'How many three-bedroom houses were sold in 2008?'}
+        {'role': 'user', 'content': question}
     ],
     stream=True
 )
